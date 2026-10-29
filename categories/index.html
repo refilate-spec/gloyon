@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Categories - Digital Products & Tools Discovery</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="brand"><span>ToolDiscovery</span></a>
+      <nav class="nav-links">
+        <a href="../tools/">Explore Tools</a>
+        <a href="../categories/" style="color: var(--text-primary);">Categories</a>
+        <a href="../compare/">Compare</a>
+        <a href="../alternatives/">Alternatives</a>
+        <a href="../about/">About Us</a>
+      </nav>
+      <div><button id="theme-toggle" class="btn btn-outline" style="padding: 0.4rem 0.75rem;">Theme</button></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1>Explore by Category</h1>
+      <p style="color: var(--text-secondary);">Browse our curated directories spanning 30 professional software and digital tool categories.</p>
+    </div>
+
+    <div id="categories-grid" class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+      <!-- Dynamically rendered -->
+    </div>
+  </main>
+
+  <script src="../assets/js/products-data.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("categories-grid");
+      if (container && typeof CATEGORIES_LIST !== "undefined") {
+        container.innerHTML = CATEGORIES_LIST.map(cat => `
+          <a href="../tools/?category=${encodeURIComponent(cat)}" class="product-card" style="text-decoration: none; color: inherit;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">${cat}</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Explore verified tools and services for ${cat.toLowerCase()}.</p>
+          </a>
+        `).join("");
+      }
+    });
+  </script>
+</body>
+</html>
 
