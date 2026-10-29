@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Software & Tools - ToolDiscovery</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="brand"><span>ToolDiscovery</span></a>
+      <nav class="nav-links">
+        <a href="../tools/">Explore Tools</a>
+        <a href="../categories/">Categories</a>
+        <a href="../compare/" style="color: var(--text-primary);">Compare</a>
+        <a href="../alternatives/">Alternatives</a>
+        <a href="../about/">About Us</a>
+      </nav>
+      <div><button id="theme-toggle" class="btn btn-outline" style="padding: 0.4rem 0.75rem;">Theme</button></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Product Comparison Matrix</h1>
+    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Compare verified features, pricing models, and platform compatibilities side-by-side.</p>
+
+    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+      <select id="compare-select-1" style="padding: 0.6rem; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; flex: 1;">
+        <option value="">Select Tool 1</option>
+      </select>
+      <select id="compare-select-2" style="padding: 0.6rem; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; flex: 1;">
+        <option value="">Select Tool 2</option>
+      </select>
+    </div>
+
+    <div id="comparison-result" style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem;">
+      <p style="text-align: center; color: var(--text-secondary);">Select two products above to view their side-by-side comparison.</p>
+    </div>
+  </main>
+
+  <script src="../assets/js/products-data.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/compare.js"></script>
+</body>
+</html>
 
