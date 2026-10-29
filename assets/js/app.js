@@ -120,4 +120,26 @@ function openProductModal(tool) {
     if (e.target === modalOverlay) modalOverlay.style.display = "none";
   };
 }
+/**
+ * Automatically attach affiliate tracking ID to external tool links
+ */
+function getAffiliateUrl(originalUrl) {
+  if (!originalUrl || originalUrl === "#") return "#";
+  try {
+    const url = new URL(originalUrl);
+    // Agar URL mein pehle se tracking param nahi hai toh add karein
+    if (!url.searchParams.has(GLOYON_CONFIG.paramName)) {
+      url.searchParams.set(GLOYON_CONFIG.paramName, GLOYON_CONFIG.defaultAffId);
+    }
+    return url.toString();
+  } catch (e) {
+    // Fallback agar relative ya invalid URL ho
+    return originalUrl;
+  }
+}
+
+// Jab bhi product cards render hon, unke official links ko wrap karne ke liye helper
+document.addEventListener("DOMContentLoaded", () => {
+  // Automatic link fixer for outbound clicks if needed
+});
 
