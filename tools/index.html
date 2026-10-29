@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore All Digital Products & Tools - ToolDiscovery</title>
+  <meta name="description" content="Browse, search, and filter verified SaaS, AI tools, and software resources.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="brand">
+        <span>ToolDiscovery</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../tools/" style="color: var(--text-primary);">Explore Tools</a>
+        <a href="../categories/">Categories</a>
+        <a href="../compare/">Compare</a>
+        <a href="../alternatives/">Alternatives</a>
+        <a href="../about/">About Us</a>
+      </nav>
+      <div>
+        <button id="theme-toggle" class="btn btn-outline" style="padding: 0.4rem 0.75rem;">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1>Explore Digital Tools & Software</h1>
+      <p style="color: var(--text-secondary);">Discover verified software solutions matched to your precise requirements.</p>
+    </div>
+
+    <!-- Filters & Search Toolbar -->
+    <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: 10px; border: 1px solid var(--border); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+      <div>
+        <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.35rem;">Search Tools</label>
+        <input type="text" id="tool-search" placeholder="Type tool name or keyword..." style="width: 100%; padding: 0.6rem; background-color: var(--bg-primary); border: 1px solid var(--border); color: var(--text-primary); border-radius: 6px;">
+      </div>
+      <div>
+        <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.35rem;">Category</label>
+        <select id="category-filter" style="width: 100%; padding: 0.6rem; background-color: var(--bg-primary); border: 1px solid var(--border); color: var(--text-primary); border-radius: 6px;">
+          <option value="">All Categories (30+)</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.35rem;">Pricing Model</label>
+        <select id="pricing-filter" style="width: 100%; padding: 0.6rem; background-color: var(--bg-primary); border: 1px solid var(--border); color: var(--text-primary); border-radius: 6px;">
+          <option value="">All Pricing</option>
+          <option value="Free">Free</option>
+          <option value="Freemium">Freemium</option>
+          <option value="Paid">Paid</option>
+        </select>
+      </div>
+      <div style="display: flex; align-items: flex-end;">
+        <button id="clear-filters" class="btn btn-outline" style="width: 100%;">Clear Filters</button>
+      </div>
+    </div>
+
+    <!-- Results count -->
+    <div style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--text-secondary);" id="results-count">
+      Showing all tools
+    </div>
+
+    <!-- Product Grid -->
+    <div id="tools-grid" class="product-grid">
+      <!-- Populated via filters.js -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom" style="border-top: none;">
+      <p>&copy; 2026 ToolDiscovery. Independent directory with clear affiliate disclosures.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/products-data.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/filters.js"></script>
+</body>
+</html>
 
