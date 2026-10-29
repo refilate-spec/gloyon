@@ -161,4 +161,50 @@ const CATEGORIES_LIST = [
   "Email Marketing", "Analytics & Research", "Freelancing Tools", "Mobile Apps", 
   "Cloud Services", "Legal & HR Software", "Website Optimization"
 ];
+// Global Affiliate/Referral Configuration
+const GLOYON_CONFIG = {
+  defaultAffId: "gloyon-21", // Yahan apni primary affiliate/referral tracking ID daalein
+  paramName: "tag"           // Jaise ?tag=gloyon-21 ya ?ref=...
+};
+
+// Blogs Database (View Modal ke liye ready)
+const GLOYON_BLOGS = [
+  {
+    id: "top-ai-tools-2026",
+    title: "Top 10 AI Tools Every Developer Needs in 2026",
+    category: "AI & Automation",
+    date: "October 2026",
+    snippet: "Discover the most powerful AI-driven developer utilities and SaaS platforms dominating the tech ecosystem this year.",
+    content: `
+      <h3>Why AI Tools Matter in 2026</h3>
+      <p>Modern software development and digital entrepreneurship rely heavily on automated workflows. From code generation assistants to zero-dependency deployment utilities, integrating the right tool stack saves hundreds of hours.</p>
+      <h4>Key Highlights:</h4>
+      <ul>
+        <li>Automated frontend optimization and static building.</li>
+        <li>AI-assisted copywriting and marketing funnels.</li>
+        <li>Edge deployment speed enhancements via Cloudflare.</li>
+      </ul>
+      <p>Explore our directory to compare these tools side-by-side and choose what fits your workflow best.</p>
+    `,
+    author: "Alhankar"
+  },
+  {
+    id: "scaling-static-websites",
+    title: "How to Scale a Zero-Backend Static Web Directory",
+    category: "Web Engineering",
+    date: "October 2026",
+    snippet: "Learn how to manage hundreds of digital products and affiliate links using pure Vanilla JS and centralized JSON data.",
+    content: `
+      <h3>The Power of Static Architecture</h3>
+      <p>Databases and complex backends are often unnecessary for content-driven directory hubs. By utilizing a centralized JavaScript array (like products-data.js) hosted on Cloudflare Pages, websites achieve blazing-fast load times with zero maintenance cost.</p>
+      <h4>Core Architecture Benefits:</h4>
+      <ul>
+        <li>Lightning-fast global edge performance.</li>
+        <li>Absolute cost-efficiency with free static hosting.</li>
+        <li>Seamless integration of dynamic affiliate tracking query strings.</li>
+      </ul>
+    `,
+    author: "Alhankar"
+  }
+];
 
