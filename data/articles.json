@@ -1,0 +1,82 @@
+[
+  {
+    "id": "choosing-an-ai-assistant",
+    "title": "How to Choose an AI Assistant",
+    "subtitle": "A practical framework for comparing capabilities, limits and fit.",
+    "category": "AI & Productivity",
+    "date": "2026-11-06",
+    "readingTime": "5 min",
+    "cover": "",
+    "excerpt": "Compare AI assistants by the work you need done, not by hype.",
+    "content": [
+      {
+        "type": "p",
+        "text": "AI assistants can support writing, research, coding and planning. The best choice depends on your workflow and the level of reliability you need."
+      },
+      {
+        "type": "h2",
+        "text": "Start with your real tasks"
+      },
+      {
+        "type": "p",
+        "text": "Write down three to five recurring tasks. Test each candidate against the same examples so the comparison is useful."
+      },
+      {
+        "type": "h2",
+        "text": "Check limitations and privacy"
+      },
+      {
+        "type": "p",
+        "text": "Review plan limits, data controls, export options and regional availability. Verify important outputs independently."
+      },
+      {
+        "type": "h2",
+        "text": "Compare total value"
+      },
+      {
+        "type": "p",
+        "text": "Look beyond the entry price. Consider time saved, collaboration needs, usage limits and whether a free plan is sufficient."
+      }
+    ]
+  },
+  {
+    "id": "hosting-plan-checklist",
+    "title": "A Checklist Before Buying Web Hosting",
+    "subtitle": "Understand renewal rates, resources, support and backups before committing.",
+    "category": "Websites",
+    "date": "2026-11-05",
+    "readingTime": "4 min",
+    "cover": "",
+    "excerpt": "A low introductory price is only one part of a hosting decision.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Hosting plans can look similar while differing in renewal cost, resource limits and support. Compare the terms that matter to your site."
+      },
+      {
+        "type": "h2",
+        "text": "Compare the full price"
+      },
+      {
+        "type": "p",
+        "text": "Check introductory and renewal rates, billing period, taxes, add-ons and refund conditions."
+      },
+      {
+        "type": "h2",
+        "text": "Review technical limits"
+      },
+      {
+        "type": "p",
+        "text": "Look for storage, bandwidth or visit limits, backup frequency, staging, SSL and migration options."
+      },
+      {
+        "type": "h2",
+        "text": "Match support to your needs"
+      },
+      {
+        "type": "p",
+        "text": "Consider support hours, channels, response expectations and documentation quality."
+      }
+    ]
+  }
+]

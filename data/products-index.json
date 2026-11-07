@@ -1,0 +1,155 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "brand": "OpenAI",
+    "category": "ai-tools",
+    "subcategory": "ai-writing",
+    "description": "An AI assistant for writing, analysis, coding, learning and everyday tasks.",
+    "keywords": [
+      "assistant",
+      "generative ai",
+      "chatbot",
+      "writing",
+      "research"
+    ],
+    "tags": [
+      "AI",
+      "Assistant",
+      "Research"
+    ],
+    "pricingModel": "Freemium",
+    "featured": true,
+    "shard": "ai-tools.json"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "brand": "Anthropic",
+    "category": "ai-tools",
+    "subcategory": "ai-writing",
+    "description": "An AI assistant for writing, analysis, coding and working with information.",
+    "keywords": [
+      "ai assistant",
+      "writing",
+      "analysis",
+      "coding"
+    ],
+    "tags": [
+      "AI",
+      "Assistant"
+    ],
+    "pricingModel": "Freemium",
+    "featured": true,
+    "shard": "ai-tools.json"
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "brand": "Google",
+    "category": "ai-tools",
+    "subcategory": "ai-writing",
+    "description": "Google's AI assistant for help with information, creative tasks and productivity.",
+    "keywords": [
+      "google ai",
+      "assistant",
+      "chatbot",
+      "multimodal"
+    ],
+    "tags": [
+      "AI",
+      "Assistant"
+    ],
+    "pricingModel": "Freemium",
+    "featured": true,
+    "shard": "ai-tools.json"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "brand": "Canva",
+    "category": "graphic-design",
+    "subcategory": "templates",
+    "description": "A visual design platform for presentations, graphics, documents and more.",
+    "keywords": [
+      "design",
+      "templates",
+      "presentations",
+      "graphics"
+    ],
+    "tags": [
+      "Design",
+      "Templates",
+      "Productivity"
+    ],
+    "pricingModel": "Freemium",
+    "featured": true,
+    "shard": "graphic-design.json"
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "brand": "Cloudflare",
+    "category": "cybersecurity",
+    "subcategory": "web-hosting",
+    "description": "A connectivity cloud platform offering security, performance and developer services.",
+    "keywords": [
+      "cdn",
+      "dns",
+      "security",
+      "performance",
+      "edge"
+    ],
+    "tags": [
+      "Security",
+      "Infrastructure",
+      "Developer"
+    ],
+    "pricingModel": "Freemium",
+    "featured": true,
+    "shard": "cybersecurity.json"
+  },
+  {
+    "id": "hostinger",
+    "name": "Hostinger",
+    "brand": "Hostinger",
+    "category": "web-hosting",
+    "subcategory": "website-builders",
+    "description": "A web hosting provider offering hosting and website-building products.",
+    "keywords": [
+      "hosting",
+      "wordpress",
+      "website builder",
+      "domains"
+    ],
+    "tags": [
+      "Hosting",
+      "Website"
+    ],
+    "pricingModel": "Paid",
+    "featured": true,
+    "shard": "web-hosting.json"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "brand": "Notion Labs",
+    "category": "productivity-tools",
+    "subcategory": "saas-software",
+    "description": "A connected workspace for notes, documents, projects and team knowledge.",
+    "keywords": [
+      "workspace",
+      "notes",
+      "wiki",
+      "project management",
+      "docs"
+    ],
+    "tags": [
+      "Productivity",
+      "Collaboration"
+    ],
+    "pricingModel": "Freemium",
+    "featured": true,
+    "shard": "productivity-tools.json"
+  }
+]
