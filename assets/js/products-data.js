@@ -1,0 +1,1 @@
+import {loadAllForSearch} from './data-loader.js';let products=[];export async function initProducts(){products=await loadAllForSearch();window.GLOYON_PRODUCTS=products;return products}export const getProducts=()=>products;

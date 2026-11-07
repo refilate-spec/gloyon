@@ -1,0 +1,1 @@
+export const go=(url)=>location.href=url;

@@ -1,0 +1,1 @@
+export function filterProducts(items,state={}){return items.filter(p=>(!state.pricing||state.pricing.includes(p.pricingModel))&&(!state.category||p.category===state.category)&&(!state.featured||p.featured)&&(!state.platform||p.platforms?.includes(state.platform))&&(!state.q||[p.name,p.brand,p.description,...(p.tags||[])].join(' ').toLowerCase().includes(state.q.toLowerCase())))}

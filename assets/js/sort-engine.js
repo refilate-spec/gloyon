@@ -1,0 +1,1 @@
+export function sortProducts(items,by='relevance'){const a=[...items];return a.sort((x,y)=>by==='az'?x.name.localeCompare(y.name):by==='za'?y.name.localeCompare(x.name):by==='newest'||by==='updated'?(y.lastUpdated||'').localeCompare(x.lastUpdated||''):Number(y.featured)-Number(x.featured))}

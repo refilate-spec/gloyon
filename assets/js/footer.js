@@ -1,0 +1,1 @@
+export {footer,mobileNav} from './components.js';

@@ -1,0 +1,1 @@
+import {toggle,get,addUnique} from './storage.js';export const toggleFavorite=id=>toggle('liked',id);export const toggleSaved=id=>toggle('saved',id);export const savedIds=()=>get('saved',[]);export const favoriteIds=()=>get('liked',[]);export const remember=id=>addUnique('recent',id,20);

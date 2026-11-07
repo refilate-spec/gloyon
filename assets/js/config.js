@@ -1,0 +1,1 @@
+export const CONFIG={brand:'Gloyon',tagline:'Discover. Compare. Choose Better.',base:'',paths:{categories:'data/categories.json',index:'data/products-index.json',articles:'data/articles.json',products:'data/products/'}};

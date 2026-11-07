@@ -1,0 +1,1 @@
+import {safeUrl} from './utils.js';export function productUrl(p,affiliate=false){const candidate=affiliate&&p.affiliateUrl?p.affiliateUrl:p.officialUrl;return safeUrl(candidate)}export function hasAffiliate(p){return !!(p.affiliateUrl&&safeUrl(p.affiliateUrl)!=='#')}
