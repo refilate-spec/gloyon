@@ -52,17 +52,11 @@ class SearchEngine {
         const terms = cleanQuery.split(/\s+/).filter(Boolean);
 
         return this.dataset.filter(item => {
-            // Category filter check
             const matchesCategory = selectedCategory === "all" || item.category === selectedCategory;
             if (!matchesCategory) return false;
-
-            // If query is empty, return everything matching the category
             if (terms.length === 0) return true;
 
-            // Combine fields for search matching
             const targetText = this.normalize(`${item.title} ${item.description} ${item.keywords.join(' ')}`);
-
-            // Check if every term exists in the target text (AND logic for query tokens)
             return terms.every(term => targetText.includes(term));
         });
     }
