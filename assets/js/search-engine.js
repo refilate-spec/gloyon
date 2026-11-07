@@ -1,4 +1,72 @@
-const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
-const fields=p=>[p.name,p.brand,p.category,p.subcategory,p.description,p.longDescription,...(p.keywords||[]),...(p.synonyms||[]),...(p.tags||[]),...(p.features||[]),...(p.benefits||[]),p.pricingModel,p.productType,...(p.platforms||[]),...(p.targetAudience||[]),...(p.useCases||[])].join(' ');
-export function searchProducts(products,q){const query=norm(q);if(!query)return products;const tokens=query.split(' ').filter(Boolean);return products.map(p=>{const name=norm(p.name),brand=norm(p.brand),cat=norm(p.category),all=norm(fields(p));let score=0;if(name===query)score+=100;if(brand===query)score+=85;if(name.startsWith(query))score+=65;if(name.includes(query))score+=50;if(cat.includes(query))score+=35;for(const t of tokens){if(name.split(' ').some(x=>x.startsWith(t)))score+=18;else if(brand.includes(t))score+=15;else if(all.includes(t))score+=8;else if(t.length>3&&all.split(' ').some(x=>distance(x,t)<=1))score+=3;}return {p,score}}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.p)}
-function distance(a,b){if(Math.abs(a.length-b.length)>1)return 9;let i=0,j=0,d=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++}else{d++;if(d>1)return d;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++}}}return d+(i<a.length||j<b.length?1:0)}
+// Advanced Database / Indexed Content
+const searchDatabase = [
+    {
+        id: 1,
+        title: "Mastering Modern JavaScript",
+        description: "Learn advanced ES6+ features, closures, async/await, and performance optimization techniques.",
+        category: "development",
+        keywords: ["js", "javascript", "coding", "async"]
+    },
+    {
+        id: 2,
+        title: "CSS Grid and Flexbox Masterclass",
+        description: "Build responsive, fluid layout designs effortlessly using modern CSS styling rules.",
+        category: "design",
+        keywords: ["css", "ui", "grid", "flexbox", "design"]
+    },
+    {
+        id: 3,
+        title: "Introduction to Generative AI",
+        description: "Understand how large language models, neural networks, and prompt engineering work under the hood.",
+        category: "ai",
+        keywords: ["ai", "machine learning", "llm", "openai", "tech"]
+    },
+    {
+        id: 4,
+        title: "Building Scalable Search Engines",
+        description: "Step-by-step tutorial on indexing text, tokenization, filtering, and scoring relevancy scores.",
+        category: "development",
+        keywords: ["search", "indexing", "algorithm", "database"]
+    },
+    {
+        id: 5,
+        title: "UI/UX Design Systems in 2026",
+        description: "Best practices for creating reusable component libraries and dark-mode friendly design tokens.",
+        category: "design",
+        keywords: ["ui", "ux", "figma", "design systems"]
+    }
+];
+
+// Search Engine Class for Advanced Queries & Scoring
+class SearchEngine {
+    constructor(dataset) {
+        this.dataset = dataset;
+    }
+
+    normalize(text) {
+        return text.toLowerCase().trim();
+    }
+
+    search(query, selectedCategory = "all") {
+        const cleanQuery = this.normalize(query);
+        const terms = cleanQuery.split(/\s+/).filter(Boolean);
+
+        return this.dataset.filter(item => {
+            // Category filter check
+            const matchesCategory = selectedCategory === "all" || item.category === selectedCategory;
+            if (!matchesCategory) return false;
+
+            // If query is empty, return everything matching the category
+            if (terms.length === 0) return true;
+
+            // Combine fields for search matching
+            const targetText = this.normalize(`${item.title} ${item.description} ${item.keywords.join(' ')}`);
+
+            // Check if every term exists in the target text (AND logic for query tokens)
+            return terms.every(term => targetText.includes(term));
+        });
+    }
+}
+
+// Expose instance globally
+window.mySearchEngine = new SearchEngine(searchDatabase);
