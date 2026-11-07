@@ -1,0 +1,88 @@
+[
+  {
+    "id": "hostinger",
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "brand": "Hostinger",
+    "logo": "",
+    "category": "web-hosting",
+    "subcategory": "website-builders",
+    "description": "A web hosting provider offering hosting and website-building products.",
+    "longDescription": "Hostinger offers web hosting and related website products. Plans, introductory pricing and renewal terms can change and should be checked directly.",
+    "keywords": [
+      "hosting",
+      "wordpress",
+      "website builder",
+      "domains"
+    ],
+    "synonyms": [
+      "web host"
+    ],
+    "tags": [
+      "Hosting",
+      "Website"
+    ],
+    "features": [
+      "Web hosting plans",
+      "Website builder offerings",
+      "Domain-related services"
+    ],
+    "advancedFeatures": [],
+    "benefits": [
+      "Multiple hosting product options",
+      "Beginner-oriented website tools"
+    ],
+    "limitations": [
+      "Promotional and renewal pricing can differ",
+      "Plan resources vary"
+    ],
+    "useCases": [
+      "Personal websites",
+      "Small business sites",
+      "WordPress hosting"
+    ],
+    "pricingModel": "Paid",
+    "pricingDetails": {
+      "startingPrice": "See official pricing page; promotions and renewals vary"
+    },
+    "freePlan": false,
+    "platforms": [
+      "Web"
+    ],
+    "targetAudience": [
+      "Individuals",
+      "Small businesses",
+      "Developers"
+    ],
+    "integrations": [
+      "WordPress"
+    ],
+    "officialUrl": "https://www.hostinger.com/",
+    "affiliateUrl": "",
+    "productType": "Service",
+    "commissionType": "",
+    "commissionDetails": "",
+    "currency": "USD",
+    "cookieDuration": "",
+    "approvalType": "",
+    "payoutMethods": [],
+    "countryAvailability": [],
+    "screenshots": [],
+    "alternatives": [],
+    "articleContent": {
+      "introduction": "Hostinger is a hosting provider with several website-related services.",
+      "overview": "Its offering includes hosting plans and tools for creating and managing websites.",
+      "howItWorks": "Choose a plan based on site type, expected resource needs and support requirements, then configure the domain and site.",
+      "evaluation": "Compare renewal rates, backups, performance limits, support and refund terms before purchase."
+    },
+    "faqs": [
+      {
+        "q": "Are Hostinger prices fixed?",
+        "a": "Promotional pricing, renewal rates and plan terms can change. Confirm current details at checkout."
+      }
+    ],
+    "featured": true,
+    "verified": false,
+    "lastUpdated": "2026-11-06"
+  }
+]

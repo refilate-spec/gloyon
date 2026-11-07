@@ -1,0 +1,91 @@
+[
+  {
+    "id": "notion",
+    "slug": "notion",
+    "name": "Notion",
+    "brand": "Notion Labs",
+    "logo": "",
+    "category": "productivity-tools",
+    "subcategory": "saas-software",
+    "description": "A connected workspace for notes, documents, projects and team knowledge.",
+    "longDescription": "Notion combines documents, databases and collaboration features in a flexible workspace. Features and plan limits vary by plan.",
+    "keywords": [
+      "workspace",
+      "notes",
+      "wiki",
+      "project management",
+      "docs"
+    ],
+    "synonyms": [
+      "team wiki"
+    ],
+    "tags": [
+      "Productivity",
+      "Collaboration"
+    ],
+    "features": [
+      "Pages and documents",
+      "Databases",
+      "Team collaboration"
+    ],
+    "advancedFeatures": [],
+    "benefits": [
+      "Flexible workspace structure",
+      "Combines several common workflows"
+    ],
+    "limitations": [
+      "Flexible setup can require organization",
+      "Advanced capabilities may require paid plans"
+    ],
+    "useCases": [
+      "Personal knowledge base",
+      "Team wiki",
+      "Project tracking"
+    ],
+    "pricingModel": "Freemium",
+    "pricingDetails": {
+      "startingPrice": "See official pricing page"
+    },
+    "freePlan": true,
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "targetAudience": [
+      "Individuals",
+      "Teams",
+      "Students"
+    ],
+    "integrations": [],
+    "officialUrl": "https://www.notion.com/",
+    "affiliateUrl": "",
+    "productType": "Software",
+    "commissionType": "",
+    "commissionDetails": "",
+    "currency": "USD",
+    "cookieDuration": "",
+    "approvalType": "",
+    "payoutMethods": [],
+    "countryAvailability": [],
+    "screenshots": [],
+    "alternatives": [],
+    "articleContent": {
+      "introduction": "Notion is a flexible workspace for organizing information and collaborative work.",
+      "overview": "Users combine pages, databases and collaboration features to create workflows.",
+      "howItWorks": "Start with pages and databases, then organize them around a personal or team process.",
+      "evaluation": "Assess permissions, offline needs, export options and plan limits before adopting it for critical workflows."
+    },
+    "faqs": [
+      {
+        "q": "Can Notion be used for free?",
+        "a": "Notion offers a free plan; check its current plan comparison for limits."
+      }
+    ],
+    "featured": true,
+    "verified": false,
+    "lastUpdated": "2026-11-06"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "canva",
+    "slug": "canva",
+    "name": "Canva",
+    "brand": "Canva",
+    "logo": "",
+    "category": "graphic-design",
+    "subcategory": "templates",
+    "description": "A visual design platform for presentations, graphics, documents and more.",
+    "longDescription": "Canva provides browser-based design tools and templates for individuals and teams. Features and plan availability may change.",
+    "keywords": [
+      "design",
+      "templates",
+      "presentations",
+      "graphics"
+    ],
+    "synonyms": [
+      "online design tool"
+    ],
+    "tags": [
+      "Design",
+      "Templates",
+      "Productivity"
+    ],
+    "features": [
+      "Template library",
+      "Visual editor",
+      "Presentation and document creation"
+    ],
+    "advancedFeatures": [],
+    "benefits": [
+      "Accessible design workflow",
+      "Broad template selection"
+    ],
+    "limitations": [
+      "Some assets and features require paid access",
+      "Brand and licensing terms should be reviewed"
+    ],
+    "useCases": [
+      "Social graphics",
+      "Presentations",
+      "Marketing assets"
+    ],
+    "pricingModel": "Freemium",
+    "pricingDetails": {
+      "startingPrice": "See official pricing page"
+    },
+    "freePlan": true,
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "targetAudience": [
+      "Creators",
+      "Small businesses",
+      "Teams"
+    ],
+    "integrations": [],
+    "officialUrl": "https://www.canva.com/",
+    "affiliateUrl": "",
+    "productType": "Software",
+    "commissionType": "",
+    "commissionDetails": "",
+    "currency": "USD",
+    "cookieDuration": "",
+    "approvalType": "",
+    "payoutMethods": [],
+    "countryAvailability": [],
+    "screenshots": [],
+    "alternatives": [],
+    "articleContent": {
+      "introduction": "Canva is a visual communication and design platform.",
+      "overview": "It combines templates and editing tools for common design tasks.",
+      "howItWorks": "Choose a format or template, customize the design and export or share it using supported options.",
+      "evaluation": "Check licensing, export requirements and paid asset restrictions for your intended use."
+    },
+    "faqs": [
+      {
+        "q": "Canva has a free plan?",
+        "a": "Canva offers a free tier; current limits and paid features are listed on its official site."
+      }
+    ],
+    "featured": true,
+    "verified": false,
+    "lastUpdated": "2026-11-06"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "gemini",
+    "slug": "gemini",
+    "name": "Gemini",
+    "brand": "Google",
+    "logo": "",
+    "category": "ai-tools",
+    "subcategory": "ai-writing",
+    "description": "Google's AI assistant for help with information, creative tasks and productivity.",
+    "longDescription": "Gemini is Google's family of AI models and assistant experiences. Features and availability depend on product, plan and region.",
+    "keywords": [
+      "google ai",
+      "assistant",
+      "chatbot",
+      "multimodal"
+    ],
+    "synonyms": [
+      "google assistant ai"
+    ],
+    "tags": [
+      "AI",
+      "Assistant"
+    ],
+    "features": [
+      "Conversational assistance",
+      "Multimodal workflows where supported"
+    ],
+    "advancedFeatures": [],
+    "benefits": [
+      "Works within Google's AI product ecosystem",
+      "Broad range of use cases"
+    ],
+    "limitations": [
+      "Features vary by region and account",
+      "Generated content should be verified"
+    ],
+    "useCases": [
+      "Research",
+      "Writing",
+      "Learning"
+    ],
+    "pricingModel": "Freemium",
+    "pricingDetails": {
+      "startingPrice": "See official pricing page"
+    },
+    "freePlan": true,
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "targetAudience": [
+      "Individuals",
+      "Students",
+      "Teams"
+    ],
+    "integrations": [],
+    "officialUrl": "https://gemini.google.com/",
+    "affiliateUrl": "",
+    "productType": "Software",
+    "commissionType": "",
+    "commissionDetails": "",
+    "currency": "USD",
+    "cookieDuration": "",
+    "approvalType": "",
+    "payoutMethods": [],
+    "countryAvailability": [],
+    "screenshots": [],
+    "alternatives": [
+      "chatgpt",
+      "claude"
+    ],
+    "articleContent": {
+      "introduction": "Gemini is Google's AI assistant experience.",
+      "overview": "It brings Google's AI capabilities into conversational and productivity workflows.",
+      "howItWorks": "Users interact through prompts and supported input types; exact capabilities depend on the current product offering.",
+      "evaluation": "Review current plan details, privacy settings and supported features before choosing."
+    },
+    "faqs": [
+      {
+        "q": "Is Gemini made by Google?",
+        "a": "Yes, Gemini is Google's AI product family."
+      }
+    ],
+    "featured": true,
+    "verified": false,
+    "lastUpdated": "2026-11-06"
+  }
+]

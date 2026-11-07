@@ -1,0 +1,88 @@
+[
+  {
+    "id": "cloudflare",
+    "slug": "cloudflare",
+    "name": "Cloudflare",
+    "brand": "Cloudflare",
+    "logo": "",
+    "category": "cybersecurity",
+    "subcategory": "web-hosting",
+    "description": "A connectivity cloud platform offering security, performance and developer services.",
+    "longDescription": "Cloudflare offers services spanning content delivery, application security, DNS and developer infrastructure. Product availability and pricing vary by service.",
+    "keywords": [
+      "cdn",
+      "dns",
+      "security",
+      "performance",
+      "edge"
+    ],
+    "synonyms": [
+      "content delivery network"
+    ],
+    "tags": [
+      "Security",
+      "Infrastructure",
+      "Developer"
+    ],
+    "features": [
+      "DNS services",
+      "Content delivery",
+      "Application security offerings"
+    ],
+    "advancedFeatures": [],
+    "benefits": [
+      "Broad infrastructure portfolio",
+      "Multiple services have free entry options"
+    ],
+    "limitations": [
+      "Some configurations require technical knowledge",
+      "Pricing differs across products"
+    ],
+    "useCases": [
+      "Website performance",
+      "DNS management",
+      "Application protection"
+    ],
+    "pricingModel": "Freemium",
+    "pricingDetails": {
+      "startingPrice": "See official pricing page"
+    },
+    "freePlan": true,
+    "platforms": [
+      "Web"
+    ],
+    "targetAudience": [
+      "Developers",
+      "Businesses",
+      "Website owners"
+    ],
+    "integrations": [],
+    "officialUrl": "https://www.cloudflare.com/",
+    "affiliateUrl": "",
+    "productType": "Service",
+    "commissionType": "",
+    "commissionDetails": "",
+    "currency": "USD",
+    "cookieDuration": "",
+    "approvalType": "",
+    "payoutMethods": [],
+    "countryAvailability": [],
+    "screenshots": [],
+    "alternatives": [],
+    "articleContent": {
+      "introduction": "Cloudflare provides internet infrastructure and security services.",
+      "overview": "Its product portfolio covers website performance, DNS, security and developer tooling.",
+      "howItWorks": "Customers configure the relevant Cloudflare service for their domains, applications or development workflows.",
+      "evaluation": "Identify the specific Cloudflare product you need and compare its limits and pricing with alternatives."
+    },
+    "faqs": [
+      {
+        "q": "Does Cloudflare offer free services?",
+        "a": "Some Cloudflare products have free plans. Check each product's current terms."
+      }
+    ],
+    "featured": true,
+    "verified": false,
+    "lastUpdated": "2026-11-06"
+  }
+]
