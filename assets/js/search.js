@@ -1,2 +1,55 @@
-import {loadAllForSearch} from './data-loader.js';import {searchProducts} from './search-engine.js';import {sortProducts} from './sort-engine.js';import {$,params,esc} from './utils.js';import {productCard} from './view.js';import {addSearch,recentSearches} from './history-engine.js';
-export async function renderSearch(){const q0=params().get('q')||'';const host=$('#page-content');host.innerHTML=`<span class="eyebrow">PRODUCT INTELLIGENCE</span><h1 class="page-title">Search products</h1><p class="muted">Search across names, brands, categories, features and use cases.</p><div class="toolbar"><input id="search-q" class="input" style="flex:1" value="${esc(q0)}" placeholder="What are you looking for?"><select id="search-sort" class="select"><option value="relevance">Relevance</option><option value="az">A–Z</option><option value="za">Z–A</option><option value="newest">Newest</option></select></div><p id="search-count" class="search-result-count"></p><div id="search-results" class="product-grid"></div><div id="search-empty"></div>`;const products=await loadAllForSearch();const draw=()=>{const q=$('#search-q').value;let results=searchProducts(products,q);results=sortProducts(results,$('#search-sort').value);$('#search-count').textContent=q?`${results.length} matching products`:`${products.length} products in the demo directory`;$('#search-results').innerHTML=results.slice(0,60).map(productCard).join('');$('#search-empty').innerHTML=results.length?'':`<div class="empty-state">No matches found. Try a broader term such as “AI”, “hosting” or “design”.${recentSearches().length?'<p>Recent: '+recentSearches().map(x=>'<button class="btn" data-query="'+esc(x)+'">'+esc(x)+'</button>').join(' ')+'</p>':''}</div>`};$('#search-q').addEventListener('input',draw);$('#search-q').addEventListener('change',()=>addSearch($('#search-q').value));$('#search-sort').addEventListener('change',draw);draw()}
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("search-input");
+    const searchBtn = document.getElementById("search-btn");
+    const searchResults = document.getElementById("search-results");
+    const searchStatus = document.getElementById("search-status");
+    const tagButtons = document.querySelectorAll(".tag");
+
+    let activeCategory = "all";
+
+    // Function to render results onto DOM
+    function executeSearch() {
+        const query = searchInput.value;
+        const results = window.mySearchEngine.search(query, activeCategory);
+
+        // Update Status text
+        searchStatus.textContent = `Found ${results.length} result(s)`;
+
+        // Clear previous results
+        searchResults.innerHTML = "";
+
+        if (results.length === 0) {
+            searchResults.innerHTML = `<div class="result-card"><p>No matching results found. Try alternative keywords.</p></div>`;
+            return;
+        }
+
+        // Populate cards
+        results.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "result-card";
+            card.innerHTML = `
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+                <span class="badge">${item.category}</span>
+            `;
+            searchResults.appendChild(card);
+        });
+    }
+
+    // Event Listeners
+    searchInput.addEventListener("input", executeSearch);
+    searchBtn.addEventListener("click", executeSearch);
+
+    // Category Tag Filters
+    tagButtons.forEach(button => {
+        button.addEventListener("click", (e) => {
+            tagButtons.forEach(btn => btn.classList.remove("active"));
+            e.target.classList.add("active");
+            activeCategory = e.target.getAttribute("data-category");
+            executeSearch();
+        });
+    });
+
+    // Initial load render
+    executeSearch();
+});
