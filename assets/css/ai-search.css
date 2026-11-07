@@ -1,8 +1,0 @@
-/* Additional custom styles if needed alongside Tailwind */
-.result-card {
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-.result-card:hover {
-    transform: translateY(-2px);
-}
-
